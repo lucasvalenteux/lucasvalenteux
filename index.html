@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lucas Valente</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página pessoal e de projetos sobre o desenvolvedor Lucas Valente. ">    
+    <!-- Materialize css -->
+    <link href="materialize/css/materialize.min.css" rel="stylesheet">
+    <!-- Local css -->
+    <link href="css/estilo.css" rel="stylesheet">
+    <!-- Fonts google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+  </head>
+  <body>
+      <!-- Parallax 1 -->            
+      <div class="parallax-container">
+        <div class="parallax">
+          <img class="capa" src="img/capa1.jpg">
+        </div>
+      </div>
+      <div class="section white">
+        <div class="row container">
+          <div>
+            <img class="perfil" src="img/perfil1.jpg">                    
+          </div>
+          <div class="descricao">
+            <h2 class="header black-text">Olá, bem vindo</h2>
+            <p class="black-text text-darken-3 lighten-3">Me chamo Lucas Valente. Criei recentemente essa página para divulgar meu perfil profissional.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Parallax 2 -->        
+      <div class="parallax-container">
+        <div class="parallax">
+          <img class="capa" src="img/capa2.jpg">
+        </div>
+      </div>
+      <div class="section white">
+          <div class="row container">              
+          <div>
+              <img class="perfil2" src="img/perfil2.jpg">
+            </div>
+            <div class="descricao2">
+              <h2 class="header black-text">Um pouco sobre mim...</h2>
+              <p class="black-text text-darken-3 lighten-3">Tenho 19 anos, sou estudante de ciência da computação na Universidade Presbiteriana Mackenzie e estagiário de UX no Itaú Unibanco. Sempre tive como objetivo estudar computação, talvez o principal motivo seja gostar de desenvolvimento Web desde cedo (Em 2006 já fuçava pelo blogger e montava meus templates :p). Hoje em dia, além de me dar super bem com programação e desenvolvimento, estou procurando adquirir conhecimentos em Design e UX, sendo a última profissão, respectivamente, algo que amo de paixão.</p>
+            </div>
+          </div>
+        </div>
+
+        <section class="menu">
+            <div class="row">
+                <div class="contantcard">
+                          <div class="card">
+                              <div class="card-image">
+                                <img class="imagemcard" g src="img/formacao.jpg">
+                                <span class="card-title">Formação</span>
+                                <a class="formacao btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                              </div>
+                              <div class="card-content">
+                              </div>
+                            </div>
+                  </div>
+                      <div class="contantcard">
+                          <div class="card">
+                              <div class="card-image">
+                                <img class="imagemcard"  src="img/experience.jpg">
+                                <span class="card-title">Experiências</span>
+                                <a class="experiencias btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                              </div>
+                              <div class="card-content">
+                              </div>
+                            </div>
+                      </div>
+                      <div class="contantcard">
+                          <div class="card">
+                              <div class="card-image">
+                                <img class="imagemcard" src="img/academic.jpg">
+                                <span class="card-title">Habilidades</span>
+                                <a class="habilidades btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                              </div>
+                              <div class="card-content">
+                              </div>
+                            </div>
+                      </div>
+                      <div class="contantcard">
+                          <div class="card">
+                              <div class="card-image">
+                                <img class="imagemcard" src="img/portifolio.jpg">
+                                <span class="card-title">Projetos</span>
+                                <a class="projetos btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                              </div>
+                              <div class="card-content">
+                              </div>
+                            </div>
+                      </div>
+                </div>
+                <div class="parallax-container">
+                    <div class="parallax">
+                      <img class="capa" src="img/capa3.jpg">
+                    </div>
+                  </div>
+                <div id="formacao" class="artigo">
+                    <h3 class="header red-text">Formação</h3>                    
+                </div>
+                <div id="experiencias" class="artigo">
+                
+                </div>
+                <div id="habilidades" class="artigo">
+
+                </div>
+                <div id="projetos" class="artigo">
+                  
+                </div>
+
+        </section>
+
+
+      <!-- Jquery.js -->        
+      <script def src="js/jquery-3.2.1.min.js"></script>
+      <!-- Materialize.js -->
+      <script def src="materialize/js/materialize.js"></script>
+      <!-- Parallax efeito -->
+      <script>
+         $(document).ready(function(){
+          $('.parallax').parallax();
+        });
+      </script>
+      <!-- Clique efeito deslizante -->
+      <script>
+        $(document).ready(function() {
+          $('.formacao').click(function() {
+            $('html, body').animate({
+            scrollTop: $('#formacao').offset().top
+            }, 2000);
+          });
+        });
+        $(document).ready(function() {
+          $('.experiencias').click(function() {
+            $('html, body').animate({
+            scrollTop: $('#experiencias').offset().top
+            }, 1800);
+          });
+        });        $(document).ready(function() {
+          $('.habilidades').click(function() {
+            $('html, body').animate({
+            scrollTop: $('#habilidades').offset().top
+            }, 1600);
+          });
+        });        $(document).ready(function() {
+          $('.projetos').click(function() {
+            $('html, body').animate({
+            scrollTop: $('#projetos').offset().top
+            }, 1400);
+          });
+        });
+      </script>
+  </body>
+</html>
+

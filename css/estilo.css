@@ -1,0 +1,30 @@
+
+.capa{ max-width: 100%;}
+
+.perfil{ width: 150px; height: 150px; float: left;}
+
+.perfil2{ width: 150px; height: 150px; float: right; border-radius: 50%; margin-top: 60px;}
+
+.descricao{ margin-left: 180px;}
+
+.descricao2{ margin-right: 180px;}
+
+.parallax-container { height: 300px;}
+
+section{ max-width: 900px; margin: 0 auto;}
+
+.menu{ margin: 0 auto;}
+
+.contantcard{ width: 24%; float: left; margin-left: 1%;}
+
+.imagemcard {height: 150px;}
+
+.artigo{ min-height: 200px; height: auto;}
+
+@media screen and (max-width: 700px) {
+    .contantcard{ width: 47%; float: left; margin-left: 1%; max-height: 190px; margin-top: 55px;}
+}
+
+@media screen and (max-width: 400px) {
+    .contantcard{ width: 100%; float: left; margin: 1%; margin-top: 45px;}
+}
